@@ -16,7 +16,7 @@ Prerequisites - Microsoft Visual Studios (I used 2013)
 
 1. General [C# help](https://msdn.microsoft.com/en-us/library/aa288436\(v=vs.71\).aspx) if you are a begineer
 2. [Finding IWebelements](https://loadfocus.com/blog/2013/09/05/how-to-locate-web-elements-with-selenium-webdriver/)
-3. Although these are not explicit unit tests we do use 'Microsoft.VisualStudio.TestTools.UnitTesting' testing framework to control the flow of our tests, [here](https://msdn.microsoft.com/en-us/library/ms182517\(v=vs.100\).aspx) is genral information for this framework.
+3. Although these are not explicit unit tests we do use 'Microsoft.VisualStudio.TestTools.UnitTesting' testing framework to control the flow of our tests, [here](https://msdn.microsoft.com/en-us/library/ms182517\(v=vs.100\).aspx) is general information for this framework.
 
 
 
