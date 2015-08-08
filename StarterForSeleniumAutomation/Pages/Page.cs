@@ -10,7 +10,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace StarterForSeleniumAutomation.Pages
 {
-    public class Page
+    public abstract class Page
     {
         public IWebDriver driver;
 
