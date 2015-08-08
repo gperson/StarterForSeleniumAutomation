@@ -17,7 +17,7 @@ The above steps will launch the test in FireFox, to get IE and Chrome to work yo
 6. Download [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 7. Download newest version of [IEDriverServer](http://selenium-release.storage.googleapis.com/index.html), for me the Win32 version worked best even though my machines OS was 64bit
 8. Place the chromedriver.exe and IEDriverServer.exe in the ./StarterForSeleniumAutomation/Drivers directory
-9. In ./StarterForSeleniumAutomation/Tests/BaseTest.cs find the below line of code and replace <path to drivers folder> with the full path to the Drivers folder (i.e C:/workspace/StarterForSeleniumAutomation/Drivers/)
+9. In ./StarterForSeleniumAutomation/Tests/BaseTest.cs find the below line of code and replace \<path to drivers folder\> with the full path to the Drivers folder (i.e C:/workspace/StarterForSeleniumAutomation/Drivers/)
 ```c#
 string driversPath = @"<path to drivers folder>";
 ```
