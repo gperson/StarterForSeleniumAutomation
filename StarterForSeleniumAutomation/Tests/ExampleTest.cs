@@ -11,6 +11,12 @@ namespace StarterForSeleniumAutomation.Tests
     [TestClass]
     public class ExampleTest : BaseTest
     {
+        [ClassInitialize]
+        public static void ClassInitialize(TestContext context)
+        {
+            testContextInstance = context;
+        }
+        
         [TestInitialize]
         public void TestInitialization()
         {
