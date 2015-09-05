@@ -19,7 +19,7 @@ namespace StarterForSeleniumAutomation.Tests
     {
         protected HomePage homePage;
         protected DatabaseManager db = new DatabaseManager(ConstantStrings.CONNECTION_STRING);
-        protected TestContext testContextInstance;
+        public static TestContext testContextInstance;
         protected IWebDriver driver;
         protected BrowserType browserType;
 
@@ -54,11 +54,27 @@ namespace StarterForSeleniumAutomation.Tests
             //Initialize all page objects, if more pages are add you must add them here also
             homePage = new HomePage(this.driver);
         }
+        
+        /// <summary>
+        /// Closes the browser
+        /// </summary>
+        public void CloseBrowser()
+        {
+            //Take screen shot if it failed 
+            if (testContextInstance.CurrentTestOutcome != UnitTestOutcome.Passed)
+            {
+                Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
+                //ss.SaveAsFile("<path to test output>"); <- To enable uncoment and set this path
+            }
+
+            //Quits driver
+            driver.Quit();
+        }
 
         /// <summary>
         /// Test context, for data-driven tests, deployment directory, etc.
         /// </summary>
-        protected TestContext TestContext
+        public TestContext TestContext
         {
             get
             {
