@@ -38,7 +38,7 @@ namespace StarterForSeleniumAutomation.Tests
         [TestCleanup]
         public void TestCleanup()
         {
-            driver.Quit();
+            CloseBrowser();
         }
     }
 }
