@@ -12,8 +12,10 @@ namespace StarterForSeleniumAutomation.Pages
     public class HomePage : Page
     {
         #region IWebelements
+        #pragma warning disable 0649
         [FindsBy(How = How.Id, Using = "lst-ib")]
         private IWebElement InputSearchField;
+        #pragma warning restore 0649
         #endregion
 
         /// <summary>
