@@ -32,7 +32,7 @@ string driversPath = @"<path to drivers folder>";
 
 All the import folders/files are found inside the StarterForSelenium folder. Below I will talk briefly about important files or folders found here.
 
-__Constants__: The classes in here will hold and constant values you want to use throughout the project.  This will help eliminate duplicate code and can be a one stop place to hold any strings, queries, test properties, or anything else.  All methods and fields will be __public__ and  __static__ and so it is to reference them throughout the project.
+__Constants__: The classes in here will hold and constant values you want to use throughout the project.  This will help eliminate duplicate code and can be a one stop place to hold any strings, queries, test properties, or anything else.  All methods and fields will be __public__ and  __static__ and so it is easy to reference them throughout the project.
 
 __Enums__: This will hold any enums you would like to create. I used it for BrowserTypes and TestEnvironment, so I can easily make comparisons when trying to set up my tests.
 
