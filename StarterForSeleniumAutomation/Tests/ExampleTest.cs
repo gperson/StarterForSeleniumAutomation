@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace StarterForSeleniumAutomation.Tests
 {
@@ -32,6 +33,7 @@ namespace StarterForSeleniumAutomation.Tests
 
             //Searches google
             homePage.SearchGoogleHomePage(searchValue);
+            Thread.Sleep(1000);//Wait 1 sec.
             
             //Clicks first link
             string linkText = homePage.ClickFirstResult();
