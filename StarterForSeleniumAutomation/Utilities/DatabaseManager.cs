@@ -107,7 +107,7 @@ namespace StarterForSeleniumAutomation.Utilities
         /// <param name="index"></param>
         /// <param name="data"></param>
         /// <returns></returns>
-        public Object GetValueFromData<T>(string key, int index, Dictionary<string, List<Object>> data = null)
+        public Object GetValueFromData<T>(string key, int index = 0, Dictionary<string, List<Object>> data = null)
         {
             if (data != null)
             {
